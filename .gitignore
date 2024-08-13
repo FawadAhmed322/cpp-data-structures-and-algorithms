@@ -1,0 +1,62 @@
+# Ignore build artifacts
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.class
+*.bin
+*.elf
+
+# Ignore directories for builds
+/build/
+/bin/
+/Debug/
+/Release/
+/out/
+/x64/
+/x86/
+
+# Ignore CMake specific files
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+CMakeScripts/
+Testing/
+CTestTestfile.cmake
+install_manifest.txt
+
+# Ignore VS Code specific files
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+.vscode/extensions.json
+
+# Ignore external libraries
+libs/
+vendor/
+
+# Ignore temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+*~
+
+# Ignore backup files
+*.bak
+*.old
+*.orig
+
+# Ignore compiled Python files (if you're using Python scripts)
+__pycache__/
+*.py[cod]
+*.pyo
