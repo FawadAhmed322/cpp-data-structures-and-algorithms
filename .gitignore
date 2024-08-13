@@ -12,6 +12,11 @@
 *.bin
 *.elf
 
+# Ignore all executable files without extensions
+# This pattern will ignore any file that doesn't have an extension and is marked as executable
+*.*
+!*.*
+
 # Ignore directories for builds
 /build/
 /bin/

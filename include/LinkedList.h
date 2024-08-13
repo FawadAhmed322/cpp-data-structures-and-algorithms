@@ -27,15 +27,15 @@ class LinkedList {
         }
 
 
-        int getSize() {
+        int getSize() const {
             return size;
         }
 
-        bool isEmpty() {
+        bool isEmpty() const {
             return size == 0;
         }
 
-        T front() {
+        T front() const {
             if (isEmpty()) {
                 throw std::out_of_range("List is empty");
             }
@@ -72,7 +72,7 @@ class LinkedList {
             throw std::out_of_range("Remove Operation Failed: List is empty");
         }
 
-        T end() {
+        T end() const {
             return tail -> data;
         }
 
@@ -108,7 +108,7 @@ class LinkedList {
             throw std::out_of_range("Remove Operation Failed: List is empty");
         }
 
-        int find(T value) {
+        int find(T value) const {
             Node* curr = head;
             int i = 0;
             while (curr) {
@@ -121,7 +121,7 @@ class LinkedList {
             return -1;
         }
 
-        T getAt(int index) {
+        T getAt(int index) const {
             if (index < 0) {
                 throw std::out_of_range("Index must be be >= 0");
             } else if (index >= size) {
