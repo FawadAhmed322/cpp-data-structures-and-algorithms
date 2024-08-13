@@ -13,7 +13,8 @@
 *.elf
 
 # Ignore all files without an extension
-[^.]* 
+[^.]*
+test_
 
 # Ignore directories for builds
 /build/
